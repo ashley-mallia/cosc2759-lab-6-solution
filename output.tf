@@ -12,4 +12,5 @@ output "db_user" {
 
 output "db_pass" {
   value = aws_rds_cluster.postgresql.master_password
+  sensitive = true
 }
